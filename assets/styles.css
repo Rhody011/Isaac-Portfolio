@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&family=Ubuntu:wght@400;500;700&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    text-decoration:none;
+
+}
+/*==========Navbar Styling===========*/
+.navbar{
+    position:fixed;
+    top:0;
+    width:100%;
+    background:rgb(62, 61, 63);
+    font-family: 'Ubuntu', sans-serif;
+    padding: 10px 0;
+}
+.navbar .max-width{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.max-width{
+    max-width :1300px;
+    padding:0 80px;
+    margin:auto;
+
+}
+.navbar .logo a{
+   color:#fff;
+    font-size:35px;
+    font-weight:600;
+}
+.navbar .menu li {
+    display:inline-block;
+    list-style:none;
+
+}
+.navbar .menu li a{
+    color:#ffff;
+    font-size: 18px;
+    font-weight:500;
+    margin-left:25px;
+}
+/*==========Home Section Styling=========*/
+.home{
+    height:100vh;
+    background: url("images/background.jpg") no-repeat center;
+    color:white;
+    font-family: 'Ubuntu', sans-serif;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 500px;
+    padding:0 50px;
+    
+}
+
+.home-content{
+    display:flex;
+    align-items: center;
+}
+
+.banner-image{
+    background:url("images/banner.png") no-repeat center;
+    width:60%;
+    height: 80%;
+}
+.home .home-content .text-1{
+    font-size: 27px;
+}
+.home .home-content .text-2{
+    font-size: 75px;
+    font-weight:600;
+    margin-left:-3px;
+}
+.home .home-content .text-3{
+    font-size: 40px;
+    margin:5px 0;
+}
