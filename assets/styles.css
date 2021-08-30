@@ -128,11 +128,11 @@ color:crimson;
 section{
     padding:100px 0;
 }
-.about{
+.about, .services{
     font-family:'Poppins', sans-serif;
 
 }
-.about .title{
+section .title{
     font-family:'Ubuntu',sans-serif;
     text-align:center;
     font-size:40px;
@@ -141,7 +141,7 @@ section{
     margin-bottom: 60px;
     position:relative;
 }
-.about .title::before{
+section .title::before{
     content:"";
     position:absolute;
     bottom:0px;
@@ -164,6 +164,46 @@ section{
     transform:translateX(-50%);
 }
 
+.about .about-content{
+    display:flex;
+    align-items:center;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    
+}
+.about .about-content .left-column{
+    width:45%;
+}
+.about .about-content .right-column{
+    width:55%;
+}
+.right-column .text{
+    font-size:25px;
+    font-weight:600;
+    margin-bottom: 10px;
+}
+.right-column .text span{
+    color:crimson;
+}
+.right-column p{
+    text-align: justify;
+}
+.right-column a{
+    display:inline-block;
+    background:crimson;
+    color:#fff;
+    font-size:15px;
+    padding:5px 15px;
+    margin-top:18px;
+    border-radius: 6px;
+    transition:all 0.3s ease;
+    border:2px solid crimson;
+    
+}
+.right-column a:hover{
+    color:crimson;
+    background:none;
+}
 .left-column img{
     height:400px;
     width:400px;
@@ -171,10 +211,54 @@ section{
     border-radius:6px;
 }
 
+/*==========================Services Section================*/
+.services{
+    color:#fff;
+    background-color: #111;
+}
+.services .title::before{
+    background:#fff;
+}
+.services .title::after{
+    content:"What I Provide";
+    position:absolute;
+    bottom:-10px;
+    left:50%;
+    font-size:20px;
+    color:crimson;
+    padding:5px;
+    background:#fff;
+    transform:translateX(-50%);
+    background-color: #111;
+}
+.services-content .card{
+    width:30%;
+    display:inline-block;
+    background-color: #222;
+    text-align:center;
+    border-radius:6px;
+    padding:20px 25px;
+    cursor:pointer;
+    margin:10px;
+    transition:all 0.3s ease;
+}
+.services-content .card .box{
+    transition: all 0.3s ease;
+}
+.services-content .card:hover .box{
+    transform:scale(1.05);
+}
+.services-content .card i{
+    font-size:50px;
+    color:crimson;
+    margin-bottom: 5px;
+}
 
-
-
-
+.services-content .card .text{
+    font-size:25px;
+    font-weight:500;
+    margin:10px 0 7px 0;
+}
 
 
 
@@ -198,19 +282,23 @@ section{
 
 
 /*====================Responsive media query=================*/
+@media (max-width:1300px){
+    .home .max-width{
+        margin-left:0px;
+    }
+}
 @media (max-width:1104px){
     .home .max-width{
         margin-left:0px;
     }
 }
+
 @media (max-width:991px){
     .max-width{
         padding:0 50px;
     }
 }
 @media (max-width:947px){
-
-
 .menu-btn{
     display:block;
     z-index:999;
@@ -257,6 +345,19 @@ section{
 .home .home-content a{
     font-size:23px;
     padding:10px 30px;
+}
+.about .about-content{
+    display:block;
+}
+.right-column{
+    width:50%;
+}
+.left-column{
+    width:50%;
+    
+}
+.max-width{
+    max-width: 800px;
 }
 }
 @media (max-width:500px){
