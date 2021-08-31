@@ -128,7 +128,7 @@ color:crimson;
 section{
     padding:100px 0;
 }
-.about, .services{
+.about, .services, .skills{
     font-family:'Poppins', sans-serif;
 
 }
@@ -261,15 +261,86 @@ section .title::before{
 }
 
 
+/*==============Skills Section==========*/
 
+.skills .skills-content{
+    display:flex;
+    align-items:center;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    
+}
+.skills .title::after{
+    content:"What I Know";
+    content:"What I Provide";
+    position:absolute;
+    bottom:-10px;
+    left:50%;
+    font-size:20px;
+    color:crimson;
+    padding:5px;
+    background:#fff;
+    transform:translateX(-50%);
+    
+}
+.skills .skills-content .left-column{
+    width:45%;
+    
+}
+.skills .skills-content .left-column .text{
+    font-size:20px;
+    font-weight:600;
+    margin-bottom:10px;
+}
+.skills-content .left-column p{
+    text-align: justify;
+}
+.skills .skills-content .right-column{
+    width:50%;
+}
+.skills .skills-content .right-column .bars{
+    margin-bottom:15px;
+}
+.info{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+.skills .right-column .span{
+    font-weight:500;
+    font-weight:18px;
+}
+.line{
+    height:5px;
+    width:100%;
+    background: lightblue;
+    position:relative;
+}
 
+.line::before{
+    content:"";
+    position:absolute;
+    height:100%;
+    left:0;
+    top:0;
+    background: crimson;
+}
+.html::before{
+    width:90%;
 
-
-
-
-
-
-
+}
+.css::before{
+    width:60%;
+    
+}
+.javascript::before{
+    width:80%;
+    
+}
+.mysql::before{
+    width:70%;
+    
+}
 
 
 
