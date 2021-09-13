@@ -128,7 +128,7 @@ color:crimson;
 section{
     padding:100px 0;
 }
-.about, .services, .skills{
+.about, .services, .skills, .projects{
     font-family:'Poppins', sans-serif;
 
 }
@@ -342,12 +342,75 @@ section .title::before{
     
 }
 
+/*===================Projects=====================*/
+.projects{
+    color:#fff;
+    background-color: #111;
+}
+.projects .title::before{
+    background:#fff;
+}
+.projects .title::after{
+    content:"My Work";
+    position:absolute;
+    bottom:-10px;
+    left:50%;
+    font-size:20px;
+    color:crimson;
+    padding:5px;
+    background:#fff;
+    transform:translateX(-50%);
+    background-color: #111;
+}
+.projects .carousel .card{
+    background:#222;
+    border-radius:6px;
+    padding: 25px 35px;
+    text-align:center;
+    transition:all 0.3s ease;
+}
+.projects .carousel .card:hover{
+    background:crimson;
+}
+.projects .carousel .card .box{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content:center;
+}
+.projects .carousel .card:hover .box{
+    transform:scale(1.05);
+}
+.projects .carousel .card .text{
+    font-size:15px;
+    font-weight:500;
+    margin:10px 0 7px 0;
+}
+.projects .carousel .card img{
+    height:150px;
+    width:150px;
+    border-radius:6px;
+    object-fit:cover;
+    border:5px solid crimson;
 
+}
+.projects .carousel .card:hover img{
+    border:5px solid #fff;
+    transition:all 0.3s ease;
+}
 
-
-
-
-
+.owl-dots{
+    text-align: center;
+    margin-top: 20px;
+}
+.owl-dot{
+    height:13px;
+    width:13px;
+    margin:0 5px;
+    outline:none!important;
+    border-radius:50%;
+    border:2px solid crimson!important;
+}
 
 
 
